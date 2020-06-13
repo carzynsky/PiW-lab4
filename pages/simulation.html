@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Symulacja punktu obsługi</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/simulation.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel">
+                        <div class="titlePanel">
+                            <label id="titleLabel">Symulacja punktu obsługi</label>
+                        </div>
+                        <div class="optionsPanel">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Maksymalny rozmiar kolejki: </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" id="queueSize" value="10">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding-top: 10px;">
+                                    <h3>Parametry rozkładu normalnego</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Średnia: </label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" id="mean" value="100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Odchylenie standardowe</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" id="stdev" value="15">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding-top: 10px";>
+                                    <h3>Parametry rozkładu wykładniczego</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Skala: </label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" id="scale" value="100">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Lambda</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" id="mu" value="3">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top: 50px;">
+                                    <button id="okButton" class="btn btn-primary btn-my">Start</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mainPanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Liczba klientów w kolejce: </label>
+                            </div>
+                            <div class="col-md-6">
+                                <output id="queueInfo">0</output>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Obsłużono: </label>
+                            </div>
+                            <div class="col-md-6">
+                                <output id="served">0</output>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Odrzucono: </label>
+                            </div>
+                            <div class="col-md-6">
+                                <output id="rejected">0</output>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Urzędnik A: </label>
+                            </div>
+                            <div class="col-md-4">
+                                <output id="officialAStatus"></output>
+                            </div>
+                            <div class="col-md-2">
+                                <output id="officialAInfo"></output>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Urzędnik B: </label>
+                            </div>
+                            <div class="col-md-4">
+                                <output id="officialBStatus"></output>
+                            </div>
+                            <div class="col-md-2">
+                                <output id="officialBInfo"></output>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Urzędnik C: </label>
+                            </div>
+                            <div class="col-md-4">
+                                <output id="officialCStatus"></output>
+                            </div>
+                            <div class="col-md-2">
+                                <output id="officialCInfo"></output>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+    <script src="../script.js"></script>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+body
+{
+    background-image: linear-gradient(to right, #00c6ff, #0072ff);
+    font-family: 'Cairo', sans-serif;
+}
+
+.panel
+{
+    margin-top: 100px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titlePanel
+{
+    text-align: center;
+}
+
+#titleLabel
+{
+    font-size: 60px;
+}
+
+#okButton
+{
+    background-color: #232221;
+    border: none;
+    margin-bottom: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    border-radius: 45px;
+    font-size: 15px;
+    color: white;
+}
+#okButton:hover
+{
+    background-color: #af2020;
+    transform: translateY(-1px);
+}
+
+#okButton2
+{
+    background-color: #232221;
+    border: none;
+    margin-bottom: 25px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    width: 100px;
+    border-radius: 45px;
+    font-size: 15px;
+    color: white;
+}
+#okButton2:hover
+{
+    background-color: #af2020;
+    transform: translateY(-1px);
+}
+
+.optionsPanel
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+input
+{
+    width: 100px;
+    color: white;
+    background: black;
+    border: none;
+    text-align: center;
+}
+
+.taskPanel
+{
+    margin-top: 50px;
+    text-align: left;
+}
+
+#linkToTask
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#process
+{
+    margin-top: 20px;
+    color: #00c6ff;
+    background-color: black;
+}
